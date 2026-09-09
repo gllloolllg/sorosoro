@@ -95,17 +95,34 @@ input { height: 48px; padding: 0 13px; }
 textarea { padding: 12px 13px; resize: vertical; line-height: 1.5; }
 input:focus, textarea:focus { border-color: var(--theme); box-shadow: 0 0 0 4px rgba(154,179,179,.18); }
 
+
+
 #recordDate {
   display: block;
-  width: 100%;
+  width: -webkit-fill-available;
   min-width: 0;
   max-width: 100%;
   box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 #recordDate::-webkit-date-and-time-value {
+  min-height: 1.2em;
   text-align: left;
 }
+
+#historyButton {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#historyButton:focus-visible {
+  border-radius: 6px;
+  outline: 2px solid var(--theme);
+  outline-offset: 2px;
+}
+
 
 .interval-control { display: flex; align-items: center; gap: 10px; }
 .interval-field { display: grid; grid-template-columns: minmax(0, 1fr) 42px; align-items: end; column-gap: 12px; }
