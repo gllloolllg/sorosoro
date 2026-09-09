@@ -10,7 +10,7 @@
   --shadow: 0 12px 36px rgba(48, 66, 66, .10);
   font-family: "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", system-ui, sans-serif;
   color: var(--text);
-  background: var(--bg#
+  background: var(--bg);
 }
 
 * { box-sizing: border-box; }
