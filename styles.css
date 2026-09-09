@@ -94,6 +94,7 @@ input, textarea { width: 100%; border: 1px solid #d9e1e0; border-radius: 13px; o
 input { height: 48px; padding: 0 13px; }
 textarea { padding: 12px 13px; resize: vertical; line-height: 1.5; }
 input:focus, textarea:focus { border-color: var(--theme); box-shadow: 0 0 0 4px rgba(154,179,179,.18); }
+
 #recordDate {
   display: block;
   width: 100%;
@@ -105,6 +106,7 @@ input:focus, textarea:focus { border-color: var(--theme); box-shadow: 0 0 0 4px 
 #recordDate::-webkit-date-and-time-value {
   text-align: left;
 }
+
 .interval-control { display: flex; align-items: center; gap: 10px; }
 .interval-field { display: grid; grid-template-columns: minmax(0, 1fr) 42px; align-items: end; column-gap: 12px; }
 .interval-heading { min-width: 0; }
