@@ -245,20 +245,12 @@ function openRecordModal(item) {
       ]);
       records.push(record);
       renderItems();
-      showToast(`${item.name}を記録しました`, () => undoRecord(record));
     } catch (error) {
       if (card && previousProgress) card.style.setProperty("--progress", previousProgress);
       console.error(error);
       showToast("記録できませんでした");
     }
   });
-}
-
-async function undoRecord(record) {
-  await deleteCloud("records", record.id);
-  records = records.filter(r => r.id !== record.id);
-  renderItems();
-  showToast("記録を元に戻しました");
 }
 
 function openItemModal(item = null) {
